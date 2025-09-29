@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asociación de Ciencias Naturales del Litoral</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f9f5;
+      color: #2f3e2f;
+    }
+
+    header {
+      background-color: #2f4f2f;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+      margin-left: 1.5rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #a8d5ba;
+    }
+
+    /* Dropdown */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #3b5d3b;
+      padding: 0.5rem 0;
+      border-radius: 5px;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li {
+      margin: 0;
+    }
+
+    nav ul li ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      color: white;
+      white-space: nowrap;
+    }
+
+    nav ul li ul li a:hover {
+      background-color: #4d704d;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #2f4f2f;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #2f4f2f;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Asociación de Ciencias Naturales del Litoral</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#quienes">Quiénes somos</a></li>
+        <li>
+          <a href="#proyectos">Proyectos ▾</a>
+          <ul>
+            <li><a href="#proyecto1">Conservación</a></li>
+            <li><a href="#proyecto2">Educación Ambiental</a></li>
+            <li><a href="#proyecto3">Investigación</a></li>
+          </ul>
+        </li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>Preservando la naturaleza del litoral para las futuras generaciones</h2>
+  </section>
+
+  <section id="quienes">
+    <h3>Quiénes somos</h3>
+    <p>Somos una asociación dedicada al estudio, la conservación y la difusión del conocimiento sobre las ciencias naturales del litoral. Nuestro compromiso es con la biodiversidad, la educación y la investigación científica.</p>
+  </section>
+
+  <section id="proyectos">
+    <h3>Proyectos</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Conservación</h4>
+        <p>Protegemos especies y ecosistemas clave del litoral.</p>
+      </div>
+      <div class="card">
+        <h4>Educación Ambiental</h4>
+        <p>Generamos talleres y actividades para concientizar a la comunidad.</p>
+      </div>
+      <div class="card">
+        <h4>Investigación</h4>
+        <p>Realizamos estudios científicos que aportan al conocimiento de la biodiversidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="noticias">
+    <h3>Noticias</h3>
+    <p>Próximamente compartiremos las últimas novedades y actividades de la Asociación.</p>
+  </section>
+
+  <section id="galeria">
+    <h3>Galería</h3>
+    <p>Espacio para mostrar fotografías de nuestras actividades y la riqueza natural del litoral.</p>
+  </section>
+
+  <section id="contacto">
+    <h3>Contacto</h3>
+    <p>📍 Dirección: Ciudad del Litoral<br>
+       📧 Email: contacto@asociacionlitoral.org<br>
+       ☎️ Teléfono: +54 000 000 000</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Asociación de Ciencias Naturales del Litoral - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
